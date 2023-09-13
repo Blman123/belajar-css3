@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Exo", sans-serif;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #66bfbf;
+  /* overflow: hidden; */
+}
+.background li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 19s linear infinite;
+}
+
+.background li:nth-child(0) {
+  left: 58%;
+  width: 129px;
+  height: 129px;
+  bottom: -129px;
+  animation-delay: 1s;
+}
+.background li:nth-child(1) {
+  left: 46%;
+  width: 190px;
+  height: 190px;
+  bottom: -190px;
+  animation-delay: 5s;
+}
+.background li:nth-child(2) {
+  left: 15%;
+  width: 121px;
+  height: 121px;
+  bottom: -121px;
+  animation-delay: 5s;
+}
+.background li:nth-child(3) {
+  left: 21%;
+  width: 125px;
+  height: 125px;
+  bottom: -125px;
+  animation-delay: 14s;
+}
+.background li:nth-child(4) {
+  left: 63%;
+  width: 134px;
+  height: 134px;
+  bottom: -134px;
+  animation-delay: 16s;
+}
+.background li:nth-child(5) {
+  left: 46%;
+  width: 145px;
+  height: 145px;
+  bottom: -145px;
+  animation-delay: 23s;
+}
+.background li:nth-child(6) {
+  left: 69%;
+  width: 192px;
+  height: 192px;
+  bottom: -192px;
+  animation-delay: 28s;
+}
+.background li:nth-child(7) {
+  left: 71%;
+  width: 168px;
+  height: 168px;
+  bottom: -168px;
+  animation-delay: 8s;
+}
+.background li:nth-child(8) {
+  left: 84%;
+  width: 159px;
+  height: 159px;
+  bottom: -159px;
+  animation-delay: 10s;
+}
+.background li:nth-child(9) {
+  left: 30%;
+  width: 141px;
+  height: 141px;
+  bottom: -141px;
+  animation-delay: 42s;
+}
+
+.kotak {
+  width: 250px;
+  height: 250px;
+  top: 20px;
+  left: 550px;
+  position: absolute;
+  z-index: 999;
+  background-image: url(jasa.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 52% 48% 52% 48% / 48% 51% 49% 52%;
+}
+.content {
+  z-index: 89;
+  background: rgba(234, 246, 246, 0.65);
+  box-shadow: 4.4px 4.3px 2.2px rgba(0, 0, 0, 0.02),
+    9.2px 9px 5.3px rgba(0, 0, 0, 0.028),
+    15.1px 14.7px 10px rgba(0, 0, 0, 0.035),
+    23.5px 23px 17.9px rgba(0, 0, 0, 0.042),
+    38.7px 37.8px 33.4px rgba(0, 0, 0, 0.05), 83px 81px 80px rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 400px auto;
+  width: 650px;
+  height: 150px;
+  border-radius: 36% 64% 50% 50% / 36% 31% 69% 64%;
+}
+
+.tex {
+  z-index: 99;
+  font-family: cursive;
+  text-align: center;
+  margin-top: 32px;
+  font-size: 24px;
+}
